@@ -20,3 +20,14 @@ for letter in plain_text:
 
 print(f'origial message: {plain_text}')
 print(f'encrypted message: {cipher_text}')
+
+#DECRYPT
+cipher_text = input('Enter the message to decrypt: ')
+plain_text = ''
+
+for letter in cipher_text:
+    index = alicia_keys.index(letter)
+    plain_text += charmander[index]
+
+print(f'encryted message: {cipher_text}')
+print(f'original message: {plain_text}')
