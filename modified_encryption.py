@@ -1,14 +1,11 @@
 #import random
 #import string
 
-# User input
 name = input("Enter your name: ")
 age = input("Enter your age: ")
-birthday = input("Enter your birthday (YYYY-MM-DD): ")
 
-# If-Else Statements for Formatting
 if name:
-    name = name.title()  # Capitalizes first letter of each word
+    name = name.title()  
 else:
     name = "Unknown"
 
@@ -17,20 +14,8 @@ if age.isdigit():
 else:
     age = "Invalid age"
 
-if birthday:
-    try:
-        year, month, day = birthday.split('-')
-        months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-        formatted_birthday = f"{months[int(month)-1]} {int(day)}, {year}"
-    except:
-        formatted_birthday = "Invalid date format"
-else:
-    formatted_birthday = "Unknown"
-
 print(f"Name: {name}")
 print(f"Age: {age}")
-print(f"Birthday: {formatted_birthday}")
-
 
 #charmander = " " + string.punctuation + string.digits + string.ascii_letters
 #charmander = list(charmander)
